@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Coustard&display=swap" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet"> 
+	</head>
+	<body>
+	<div id="header">
+	
+		<h1>Temperatures</h1>
+	</div>
+	<div class="centerlize">
+		<p id="timeNotif"></p>
+	</div>
+	<div id="canvases">
+		<div class="canvasHolder" id="temperature">
+			<canvas id="tempChart"<!-- width="400" height="200"-->></canvas>
+		</div>
+		<div class="canvasHolder" id="humidity">
+			<canvas id="humidChart"<!-- width="400" height="200"-->></canvas>
+		</div>
+	</div>
+
+	<script
+	    src="https://code.jquery.com/jquery-3.4.1.min.js"
+	    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	    crossorigin="anonymous"></script>
+	<script 
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" 
+		integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" 
+		crossorigin="anonymous"></script>
+
+	<script src="js/embelledtemperatures.js"></script>
+
+	</body>
+</html>

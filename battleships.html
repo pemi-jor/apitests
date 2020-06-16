@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/battleships.css" rel="stylesheet">
+	</head>
+	<body>
+	<div id="gameArea">
+	<!--
+		<div class="allScore">
+			<ol>
+				<li>olli: <span class="score">300</span></li>
+				<li>juhani: <span class="score">3300</span></li>
+				<li>markus: <span class="score">50</span></li>
+				<li>ville: <span class="score">1200</span></li>
+				<li>olli: <span class="score">300</span></li>
+			</ol>
+		</div>
+		-->
+		<div id="status" hidden="true">
+		<p id="ships">Aloita peli</p>
+		<p id="ammo">painamalla </p>
+		<p id="timer">Aloita peli-nappia!</p>
+		<p id="point"></p>
+		</div>
+		<div id="sea" hidden="true">
+		<table id="table" class="nope">
+			<tr>
+				<td id="0" onclick="pew(0)"></td>
+				<td id="1" onclick="pew(1)"></td>
+				<td id="2" onclick="pew(2)"></td>
+				<td id="3" onclick="pew(3)"></td>
+				<td id="4" onclick="pew(4)"></td>
+			</tr>
+			<tr>
+				<td id="5" onclick="pew(5)"></td>
+				<td id="6" onclick="pew(6)"></td>
+				<td id="7" onclick="pew(7)"></td>
+				<td id="8" onclick="pew(8)"></td>
+				<td id="9" onclick="pew(9)"></td>
+			</tr>
+			<tr>
+				<td id="10" onclick="pew(10)"></td>
+				<td id="11" onclick="pew(11)"></td>
+				<td id="12" onclick="pew(12)"></td>
+				<td id="13" onclick="pew(13)"></td>
+				<td id="14" onclick="pew(14)"></td>
+			</tr>
+			<tr>
+				<td id="15" onclick="pew(15)"></td>
+				<td id="16" onclick="pew(16)"></td>
+				<td id="17" onclick="pew(17)"></td>
+				<td id="18" onclick="pew(18)"></td>
+				<td id="19" onclick="pew(19)"></td>
+			</tr>
+			<tr>
+				<td id="20" onclick="pew(20)"></td>
+				<td id="21" onclick="pew(21)"></td>
+				<td id="22" onclick="pew(22)"></td>
+				<td id="23" onclick="pew(23)"></td>
+				<td id="24" onclick="pew(24)"></td>
+			</tr>
+		</table>
+		</div>
+		<div id= "buttons">
+			<button id="btnStart" onclick="startGame()">Aloita peli</button>
+			<!--<button hidden onclick="startGame()">Stop time</button>-->
+			<input hidden="true" readonly id="scored" value="0">
+		</div>
+		
+		
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+ 
+	<script src="js/battleships.js"></script>
+	
+	</body>
+</html>
